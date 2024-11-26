@@ -1,0 +1,19 @@
+REM Script written by AmberCDH
+REM DuckyScript
+
+DELAY 1000
+GUI r
+DELAY 1000
+STRING powershell -Command "Get-ChildItem -Path \"$env:USERPROFILE\Desktop\" -Recurse -Filter *.txt; Pause"
+ENTER
+DELAY 1000
+GUI r
+DELAY 1000
+STRING powershell -Command "Get-ChildItem -Path \"$env:USERPROFILE\Desktop\" -Recurse -Filter *.txt | Out-File -FilePath \"$env:USERPROFILE\Desktop\randomFile.txt""
+ENTER
+DELAY 1000
+GUI r
+DELAY 1000
+STRING powershell -Command "ipconfig | Out-File -FilePath \"$env:USERPROFILE\Desktop\ipconfigFile.txt""
+ENTER
+DELAY 1000
